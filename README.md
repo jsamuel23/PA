@@ -5,3 +5,5 @@
 * github repo loomine - PA
 * VSCode remote seadistamine
 * kursuse põhifailide loomine ja testimine
+## Materjalid
+* PA käsiraamat - [https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/](https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/)
