@@ -9,3 +9,4 @@
 ## Materjalid
 * PA käsiraamat - [https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/](https://web.htk.tlu.ee/digitaru/programmeerimine/part/sissejuhatus/)
 * Õpetaja Git - [https://github.com/AnnaKarutina/pa_kd19](https://github.com/AnnaKarutina/pa_kd19)
+* See on Test
