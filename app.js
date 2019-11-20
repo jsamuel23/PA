@@ -1,10 +1,7 @@
-// for tsükkel
+// Tsüklid
+
+ // for tsükkel
  // üldtsükkel
- let autod = ['Kia', 'Toyota', 'Ford', 'Nissan'];
- // väljastus
- for(let i = 0; i < autod.length; i++){
-   console.log(autod[i]);
- } 
  let numbrid = [];
  // lisame nimekirja sisse juhuslikud arvud
  for(let i = 0; i < 10; i++){
@@ -27,3 +24,13 @@
  }
  // kontrollime tulemus
  console.log(numbrid); 
+ // while
+ // ellkontrolliga tsükkel
+ let number = 1; // defineerime tsükli juhtimismuutuja
+ // paneme kontrolltingimus paika
+ while(number <= 10) {
+   // sooritame tegevused
+   console.log(number);
+   // suurendame juhtimismuutuja väärtus
+   number++;
+ } 
