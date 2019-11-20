@@ -1,33 +1,17 @@
-// Funktsioonid
- // Nähtavus - Scope
-
- // Funktsioon, mis arvutab 
- // riistküliku pindala
- // globaalne
- var a = 1;
+@@ -5,4 +5,16 @@ var a = 1;
  let b = 2;
  const c = 3;
 
- function riistkylikuPindala(pikkus, laius){
-   // arvutame pindala
-   let pindala = pikkus * laius;
-   // tagastame pindala põhiprogrammi
-   return pindala;
+ // plokki põhine
+ if(true) {
+   var a = 4;
+   let b = 5;
+   const c = 6;
+   console.log('Plokk: ', a, b, c);
  }
 
-
- // Funktsioon, mis väljastab tulemus ekraani
- function valjasta(pikkus = 0, laius = 0){
-   // väljastame väärtused
-   console.log('Pikkus = ' + pikkus);
-   console.log('Laius = ' + laius);
-   // salvestame arvutatud pindala
-   let pindala = riistkylikuPindala(pikkus, laius);
-   // väljastame tulemus
-   console.log('Pindala = ' + pindala);
+ for(var a = 0; a < 10; a++){
+   console.log('Tsükkel: ', a);
  }
 
- valjasta(15, 5);
- valjasta(1, 5);
- valjasta(); 
  console.log('Globaalne: ', a, b, c); 
