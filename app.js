@@ -1,28 +1,18 @@
-// Funktsioon, mis arvutab 
- // riistküliku pindala
- // ja väljastab ekraani
-
- function riistkylikuPindala(pikkus, laius){
-    // arvutame pindala
-    let pindala = pikkus * laius;
-    // tagastame pindala põhiprogrammi
+@@ -10,8 +10,9 @@ function riistkylikuPindala(pikkus, laius){
     return pindala;
   }
  
+ 
   // Funktsioon, mis väljastab tulemus ekraani
   function valjasta(pikkus, laius){
+  function valjasta(pikkus = 0, laius = 0){
     // väljastame väärtused
     console.log('Pikkus = ' + pikkus);
     console.log('Laius = ' + laius);
-    // arvutame pindala
-    let pindala = pikkus * laius;
-    // väljastame pindala
-    // salvestame arvutatud pindala
-    let pindala = riistkylikuPindala(pikkus, laius);
-    // väljastame tulemus
-    console.log('Pindala = ' + pindala);
+  @@ -22,4 +23,5 @@ function valjasta(pikkus, laius){
   }
  
-  riistkylikuPindala(15, 5);
   valjasta(15, 5);
   valjasta(1, 5); 
+  valjasta(1, 5);
+  valjasta(); 
