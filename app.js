@@ -1,33 +1,39 @@
-// Andmetüübid
- // Logid konsoolile
+// Logid konsoolile
+ // Muutujad
 
- // täisarvud
- console.log(10);
- console.log(-4);
- console.log(0);
  // logid
  console.log('123');
+ // var
+ // muutujate defineerimine
+ var nimi = 'Anna'; // defineerimine
+ console.log(nimi);
+ nimi = 'Katrin'; // väärtuse omistamine
+ console.log(nimi);
 
- // reaalarvud - ujuvkomaarvud
- console.log(2.5);
- console.log(-7.23);
- console.log(-2.0);
  // tabel
  console.table({a : 1, b : 2});
+ // muutujate initsialiseerimine
+ var tervitus;
+ console.log(tervitus);
+ tervitus = 'Tere tulemast!';
+ console.log(tervitus);
 
- // sõned - tekst
- console.log('Hello World!');
  // veateade
  console.error('See on mingi viga');
+ // liitnimede kasutamine
+ var eesNimi = 'Anna'; // Camel Stiil
+ var ees_nimi = 'Anna'; // PHP Stiil
+ var EesNimi = 'Anna'; // Pascal Stiil
+ var eesnimi = 'Anna';
 
- // tõeväärtused
- console.log(true); // tõene
- console.log(false); // väär
  // märkused
  console.warn('See on märkus');
+ // let - muutuja
+ let pereNimi = 'Karutina';
+ console.log(pereNimi);
+ pereNimi = '?????';
+ console.log(pereNimi);
 
- // nimekiri 
- console.log([1, 2, 3, 4]);
  // ajakulu kontroll
  console.time('Test');
    console.log('mingi tegevus');
@@ -36,10 +42,23 @@
    console.log('mingi tegevus');
    console.log('mingi tegevus');
  console.timeEnd('Test');
+ // const - konstant
+ const minuEesNimi = 'Anna';
+ console.log(minuEesNimi);
+ // minuEesNimi = 'Katrin';
 
- // objektid
- console.log({a : 1, b : 2});
- console.table({a : 1, b : 2}); 
  // kustutamine
  console.clear(); 
+ // const kasutamise näide 1
+ const inimene = {nimi : 'Katrin', vanus : 20};
+ // inimene = {nimi: 'Katrin', rahvus: 'eestlane'};
+ console.table(inimene);
+ inimene.vanus = 21;
+ console.table(inimene);
 
+ // const kasutamine näide 2
+ const arvud = [1, 2, 3, 4, 5];
+ // arvud = [1, 2, 3, 4, 5, 6];
+ console.log(arvud);
+ arvud.push(6);
+ console.log(arvud); 
