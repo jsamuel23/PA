@@ -1,24 +1,29 @@
-
- // for tsükkel
+// for tsükkel
  // üldtsükkel
- let lause;
- for(let arv = 1; arv <= 10; arv++){
-   lause = 'arv =  ';
-   if(arv < 10) {
-     lause = lause + ' ';
-   }
-   lause = lause + arv;
-   if(arv % 2 == 0){
-     lause = lause + ' - paaris';
-   } else {
-     lause = lause + ' - paaritu';
-   }
-   console.log(lause);
-   if(arv >= 5) {
-     break;
-   }
  let autod = ['Kia', 'Toyota', 'Ford', 'Nissan'];
  // väljastus
  for(let i = 0; i < autod.length; i++){
    console.log(autod[i]);
  } 
+ let numbrid = [];
+ // lisame nimekirja sisse juhuslikud arvud
+ for(let i = 0; i < 10; i++){
+   let arv = Math.floor(Math.random() * 10);
+   numbrid.push(arv);  
+ }
+ // kontrollime tulemus
+ console.log(numbrid);
+ // sorteerime kasvujärjekorras
+ // numbrid.sort();
+ for(let kord = 0; kord < numbrid.length; kord++){
+   for(let i = 0; i < numbrid.length; i++){
+     let abi;
+     if(numbrid[i] > numbrid[i+1]){
+       abi = numbrid[i];
+       numbrid[i] = numbrid[i+1];
+       numbrid[i+1] = abi;
+     } 
+   }
+ }
+ // kontrollime tulemus
+ console.log(numbrid); 
